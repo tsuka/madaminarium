@@ -1,7 +1,890 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <room>
-  <game-table name="最初のテーブル" width="20" height="20" gridSize="50" imageIdentifier="testTableBackgroundImage_image" backgroundImageIdentifier="imageIdentifier" backgroundFilterType="" selected="false" gridType="0" gridColor="#000000e6"></game-table>
-  <card location.name="table" location.x="272.8544868699371" location.y="783.474107230704" posZ="0" state="1" rotate="0" owner="" zindex="170">
+  <game-table name="最初のテーブル" width="18" height="18" gridSize="50" imageIdentifier="./assets/images/0950a5eaa191fe9691665291020112f5f5a1b04e3101da3a233e1a439455a1f5.jpg" backgroundImageIdentifier="./assets/images/e2e5cd370ff4c3adfda5e12158c647ceb037318c7a6583da73134cf5a14ae7f7.jpg" backgroundFilterType="" selected="false" gridType="0" gridColor="#000000e6">
+    <terrain location.name="table" location.x="325" location.y="600" posZ="299.99999999999955" isLocked="true" mode="3" rotate="0">
+      <data name="terrain">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="wall">./assets/images/2e82a550a2788b1b6209c12074e6623fda96c3291ceb3ecbe56652560f5943ec.jpg</data>
+          <data type="image" name="floor">./assets/images/tex.jpg</data>
+        </data>
+        <data name="common">
+          <data name="name">地形</data>
+          <data name="width">5</data>
+          <data name="height">5</data>
+          <data name="depth">0</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </terrain>
+    <terrain location.name="table" location.x="450" location.y="475" posZ="299.99999999999983" isLocked="true" mode="3" rotate="-90">
+      <data name="terrain">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="wall">./assets/images/2e82a550a2788b1b6209c12074e6623fda96c3291ceb3ecbe56652560f5943ec.jpg</data>
+          <data type="image" name="floor">./assets/images/tex.jpg</data>
+        </data>
+        <data name="common">
+          <data name="name">地形</data>
+          <data name="width">5</data>
+          <data name="height">5</data>
+          <data name="depth">0</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </terrain>
+    <terrain location.name="table" location.x="325" location.y="350" posZ="299.99999999999994" isLocked="true" mode="3" rotate="-180">
+      <data name="terrain">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="wall">./assets/images/2e82a550a2788b1b6209c12074e6623fda96c3291ceb3ecbe56652560f5943ec.jpg</data>
+          <data type="image" name="floor">./assets/images/tex.jpg</data>
+        </data>
+        <data name="common">
+          <data name="name">地形</data>
+          <data name="width">5</data>
+          <data name="height">5</data>
+          <data name="depth">0</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </terrain>
+    <terrain location.name="table" location.x="200" location.y="475" posZ="300" isLocked="true" mode="3" rotate="90">
+      <data name="terrain">
+        <data name="image">
+          <data type="image" name="imageIdentifier"></data>
+          <data type="image" name="wall">./assets/images/2e82a550a2788b1b6209c12074e6623fda96c3291ceb3ecbe56652560f5943ec.jpg</data>
+          <data type="image" name="floor">./assets/images/tex.jpg</data>
+        </data>
+        <data name="common">
+          <data name="name">地形</data>
+          <data name="width">5</data>
+          <data name="height">5</data>
+          <data name="depth">0</data>
+        </data>
+        <data name="detail"></data>
+      </data>
+    </terrain>
+  </game-table>
+  <character location.name="table" location.x="-100" location.y="200" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/9831d2f1b0c64f8ac1094a0f379b647886646028b79fab55a7b7cbfc4f55c777.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="common" location.x="-100" location.y="150" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/9831d2f1b0c64f8ac1094a0f379b647886646028b79fab55a7b7cbfc4f55c777.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">3</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="-100" location.y="300" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/9831d2f1b0c64f8ac1094a0f379b647886646028b79fab55a7b7cbfc4f55c777.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="-100" location.y="100" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/9831d2f1b0c64f8ac1094a0f379b647886646028b79fab55a7b7cbfc4f55c777.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="900" location.y="625" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/d2bffdcfb103b51de8171893915d6f139f4e9f13b9d990f2e1fae00907d2d4f8.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="900" location.y="525" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/d2bffdcfb103b51de8171893915d6f139f4e9f13b9d990f2e1fae00907d2d4f8.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="900" location.y="725" posZ="0" rotate="-90" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/d2bffdcfb103b51de8171893915d6f139f4e9f13b9d990f2e1fae00907d2d4f8.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="100" location.y="900" posZ="0" rotate="0" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/4a9ac538844861ccff6a15bfbc4415f91d2efec6476ee62ea973af6c9dd62449.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="200" location.y="900" posZ="0" rotate="0" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/4a9ac538844861ccff6a15bfbc4415f91d2efec6476ee62ea973af6c9dd62449.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="300" location.y="900" posZ="0" rotate="0" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/4a9ac538844861ccff6a15bfbc4415f91d2efec6476ee62ea973af6c9dd62449.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="525" location.y="-100" posZ="0" rotate="-180" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/42eafdaf2e9d44f8bf6ebf632dc26375971e354e7452ff6cff8ce4f6d2c5c338.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="725" location.y="-100" posZ="0" rotate="-180" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/42eafdaf2e9d44f8bf6ebf632dc26375971e354e7452ff6cff8ce4f6d2c5c338.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <character location.name="table" location.x="625" location.y="-100" posZ="0" rotate="-180" roll="0">
+    <data name="character">
+      <data name="image">
+        <data type="image" name="imageIdentifier">./assets/images/42eafdaf2e9d44f8bf6ebf632dc26375971e354e7452ff6cff8ce4f6d2c5c338.png</data>
+      </data>
+      <data name="common">
+        <data name="name"></data>
+        <data name="size">2</data>
+      </data>
+      <data name="detail">
+        <data name="リソース">
+          <data type="numberResource" currentValue="200" name="HP">200</data>
+          <data type="numberResource" currentValue="100" name="MP">100</data>
+        </data>
+        <data name="情報">
+          <data type="note" name="説明">ここに説明を書く
+あいうえお</data>
+          <data type="note" name="メモ">任意の文字列
+１
+２
+３
+４
+５</data>
+        </data>
+        <data name="能力">
+          <data name="器用度">24</data>
+          <data name="敏捷度">24</data>
+          <data name="筋力">24</data>
+          <data name="生命力">24</data>
+          <data name="知力">24</data>
+          <data name="精神力">24</data>
+        </data>
+        <data name="戦闘特技">
+          <data name="Lv1">全力攻撃</data>
+          <data name="Lv3">武器習熟/ソード</data>
+          <data name="Lv5">武器習熟/ソードⅡ</data>
+          <data name="Lv7">頑強</data>
+          <data name="Lv9">薙ぎ払い</data>
+          <data name="自動">治癒適正</data>
+        </data>
+      </data>
+    </data>
+    <chat-palette dicebot="">チャットパレット入力例：
+2d6+1 ダイスロール
+１ｄ２０＋{敏捷}＋｛格闘｝　{name}の格闘！
+//敏捷=10+{敏捷A}
+//敏捷A=10
+//格闘＝１</chat-palette>
+  </character>
+  <card-stack location.name="table" location.x="400" location.y="375" posZ="0" rotate="0" zindex="142" owner="" isShowTotal="true">
+    <data name="card-stack">
+      <data name="image">
+        <data type="image" name="imageIdentifier"></data>
+      </data>
+      <data name="common">
+        <data name="name">山札</data>
+      </data>
+      <data name="detail"></data>
+    </data>
+    <node name="cardRoot">
+      <card location.name="table" location.x="400" location.y="375" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/d02.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/d01.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c13.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c12.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c11.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c10.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/d02.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/d01.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c13.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c12.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c11.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+      <card location.name="table" location.x="512.1732911131401" location.y="448.36586167295775" posZ="0" state="1" rotate="0" owner="" zindex="0">
+        <data name="card">
+          <data name="image">
+            <data type="image" name="imageIdentifier"></data>
+            <data type="image" name="front">./assets/images/trump/c10.gif</data>
+            <data type="image" name="back">./assets/images/trump/z02.gif</data>
+          </data>
+          <data name="common">
+            <data name="name">カード</data>
+            <data name="size">2</data>
+          </data>
+          <data name="detail"></data>
+        </data>
+      </card>
+    </node>
+  </card-stack>
+  <card location.name="table" location.x="575" location.y="725" posZ="0" state="1" rotate="0" owner="" zindex="137">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -15,7 +898,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="418.1207677169616" location.y="751.192473424202" posZ="0" state="1" rotate="15" owner="" zindex="169">
+  <card location.name="table" location.x="750" location.y="550" posZ="0" state="1" rotate="-90" owner="" zindex="139">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -29,7 +912,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="549.7766728611905" location.y="773.5659466259134" posZ="0" state="1" rotate="-15" owner="" zindex="168">
+  <card location.name="table" location.x="50" location.y="225" posZ="0" state="1" rotate="-270" owner="" zindex="93">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -43,7 +926,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="680.0038092454482" location.y="785.092955498602" posZ="0" state="1" rotate="0" owner="" zindex="135">
+  <card location.name="table" location.x="50" location.y="350" posZ="0" state="1" rotate="-270" owner="" zindex="136">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -57,7 +940,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="75.65362706332363" location.y="601.8863202112921" posZ="0" state="1" rotate="90" owner="" zindex="126">
+  <card location.name="table" location.x="50" location.y="475" posZ="0" state="1" rotate="270" owner="" zindex="106">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -71,7 +954,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="125.1526577907586" location.y="481.0446231302429" posZ="0" state="1" rotate="105" owner="" zindex="167">
+  <card location.name="table" location.x="50" location.y="600" posZ="0" state="1" rotate="270" owner="" zindex="131">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -85,7 +968,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="146.03726957772517" location.y="331.538083316963" posZ="0" state="1" rotate="90" owner="" zindex="124">
+  <card location.name="table" location.x="750" location.y="425" posZ="0" state="1" rotate="-90" owner="" zindex="145">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -99,7 +982,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="99.80026515170219" location.y="213.86848681838285" posZ="0" state="1" rotate="75" owner="" zindex="123">
+  <card location.name="table" location.x="750" location.y="300" posZ="0" state="1" rotate="-90" owner="" zindex="143">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -113,7 +996,7 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="273.4258892054757" location.y="93.68370972213224" posZ="0" state="1" rotate="180" owner="" zindex="133">
+  <card location.name="table" location.x="750" location.y="175" posZ="0" state="1" rotate="-90" owner="" zindex="134">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
@@ -127,11 +1010,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="398.1795958230699" location.y="90.53536165705287" posZ="0" state="1" rotate="180" owner="" zindex="132">
+  <card location.name="table" location.x="450" location.y="725" posZ="0" state="1" rotate="0" owner="" zindex="141">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/c10.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
@@ -141,11 +1024,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="524.6279338035828" location.y="111.0959761053257" posZ="0" state="1" rotate="150" owner="" zindex="131">
+  <card location.name="table" location.x="325" location.y="725" posZ="0" state="1" rotate="0" owner="" zindex="127">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/c11.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
@@ -155,11 +1038,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="654.6329329205726" location.y="66.76219550245008" posZ="0" state="1" rotate="0" owner="" zindex="134">
+  <card location.name="table" location.x="200" location.y="725" posZ="0" state="1" rotate="0" owner="" zindex="132">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/c12.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
@@ -169,11 +1052,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="824.5064068896725" location.y="228.53465406605673" posZ="0" state="1" rotate="90" owner="" zindex="156">
+  <card location.name="table" location.x="200" location.y="25" posZ="0" state="1" rotate="0" owner="" zindex="144">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/c13.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
@@ -183,11 +1066,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="782.9940201894171" location.y="354.5428375372235" posZ="0" state="1" rotate="90" owner="" zindex="165">
+  <card location.name="table" location.x="325" location.y="25" posZ="0" state="1" rotate="0" owner="" zindex="92">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d01.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
@@ -197,11 +1080,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="806.8390424752143" location.y="627.5473568858804" posZ="0" state="1" rotate="90" owner="" zindex="161">
+  <card location.name="table" location.x="450" location.y="25" posZ="0" state="1" rotate="0" owner="" zindex="112">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d02.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
@@ -211,67 +1094,11 @@
       <data name="detail"></data>
     </data>
   </card>
-  <card location.name="table" location.x="796.2861428039391" location.y="499.94436717867455" posZ="0" state="1" rotate="90" owner="" zindex="166">
+  <card location.name="table" location.x="575" location.y="25" posZ="0" state="1" rotate="0" owner="" zindex="133">
     <data name="card">
       <data name="image">
         <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d03.gif</data>
-        <data type="image" name="back">./assets/images/trump/z02.gif</data>
-      </data>
-      <data name="common">
-        <data name="name">カード</data>
-        <data name="size">2</data>
-      </data>
-      <data name="detail"></data>
-    </data>
-  </card>
-  <card location.name="table" location.x="324.4531076775246" location.y="409.3224065556672" posZ="0" state="1" rotate="0" owner="" zindex="153">
-    <data name="card">
-      <data name="image">
-        <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d04.gif</data>
-        <data type="image" name="back">./assets/images/trump/z02.gif</data>
-      </data>
-      <data name="common">
-        <data name="name">カード</data>
-        <data name="size">2</data>
-      </data>
-      <data name="detail"></data>
-    </data>
-  </card>
-  <card location.name="table" location.x="443.9510848993897" location.y="312.53203935496185" posZ="0" state="1" rotate="0" owner="" zindex="152">
-    <data name="card">
-      <data name="image">
-        <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d05.gif</data>
-        <data type="image" name="back">./assets/images/trump/z02.gif</data>
-      </data>
-      <data name="common">
-        <data name="name">カード</data>
-        <data name="size">2</data>
-      </data>
-      <data name="detail"></data>
-    </data>
-  </card>
-  <card location.name="table" location.x="450.2122325697471" location.y="508.57985665394324" posZ="0" state="1" rotate="0" owner="" zindex="154">
-    <data name="card">
-      <data name="image">
-        <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d06.gif</data>
-        <data type="image" name="back">./assets/images/trump/z02.gif</data>
-      </data>
-      <data name="common">
-        <data name="name">カード</data>
-        <data name="size">2</data>
-      </data>
-      <data name="detail"></data>
-    </data>
-  </card>
-  <card location.name="table" location.x="564.8595648206269" location.y="420.6020961983434" posZ="0" state="0" rotate="0" owner="" zindex="163">
-    <data name="card">
-      <data name="image">
-        <data type="image" name="imageIdentifier"></data>
-        <data type="image" name="front">./assets/images/trump/d07.gif</data>
+        <data type="image" name="front">./assets/images/trump/c01.gif</data>
         <data type="image" name="back">./assets/images/trump/z02.gif</data>
       </data>
       <data name="common">
